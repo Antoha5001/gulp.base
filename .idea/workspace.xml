@@ -142,7 +142,7 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -179,18 +179,17 @@
       <workItem from="1544753804907" duration="8127000" />
       <workItem from="1544764737999" duration="21000" />
       <workItem from="1545020856065" duration="694000" />
-      <workItem from="1545397052624" duration="3661000" />
+      <workItem from="1545397052624" duration="3891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27346000" />
+    <option name="totallyTimeSpent" value="27576000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="189" y="0" width="1641" height="995" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27197975" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27197975" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -202,7 +201,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297491" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3297491" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.3297491" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
