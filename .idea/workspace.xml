@@ -62,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+              <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -124,6 +124,11 @@
               <item name="gulp-2018.base" type="b2602c69:ProjectViewProjectNode" />
               <item name="gulp-2018.base" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="gulp-2018.base" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gulp-2018.base" type="462c0819:PsiDirectoryNode" />
+              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -175,12 +180,12 @@
       <workItem from="1544753804907" duration="8127000" />
       <workItem from="1544764737999" duration="21000" />
       <workItem from="1545020856065" duration="694000" />
-      <workItem from="1545397052624" duration="984000" />
+      <workItem from="1545397052624" duration="1196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24669000" />
+    <option name="totallyTimeSpent" value="24881000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="189" y="0" width="1641" height="995" extended-state="0" />
@@ -281,7 +286,7 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
+          <caret column="14" lean-forward="true" selection-start-column="14" selection-end-column="14" />
         </state>
       </provider>
     </entry>
