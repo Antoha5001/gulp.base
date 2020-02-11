@@ -1,9 +1,10 @@
-const { src, dest, parallel, watch } = require('gulp');  // инициализация, подключение модуля
+const { src, dest, parallel, watch, series } = require('gulp');  // инициализация, подключение модуля
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const uglify = require('gulp-uglify');
 const del = require('del');
+const pug = require('gulp-pug');
 const browserSync = require('browser-sync').create();
 
 const cssFiles = [
@@ -18,18 +19,25 @@ function hello() {
     return console.log('hello');
 }
 
-function css() {
-   return src(cssFiles)
-       .pipe(concat('style.css'))
-       .pipe(autoprefixer({
-           browsers: ['last 2 versions'],
-           cascade: false
-       }))
-       .pipe(cleanCSS({level: 2}))
-       .pipe(dest('./build/css/'))
-       .pipe(browserSync.stream());
-}
+function cssBuild() {
+    return src(cssFiles)
+        .pipe(concat('style.css'))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(cleanCSS({level: 2}))
+        .pipe(dest('./build/css/'))
+        .pipe(browserSync.stream());
+ }
 
+ function css() {
+    return src(cssFiles)
+        .pipe(concat('style.css'))        
+        .pipe(dest('./build/css/'))
+        .pipe(browserSync.stream());
+ }
+  
 function scripts() {
     return src(jsFiles)
         .pipe(concat('script.js'))
@@ -54,15 +62,11 @@ function clean(){
     return del(['build/*']);
 }
 
-// gulp.task('styles', css);
-// gulp.task('scripts', scripts);
 exports.css = css;
 exports.scripts = scripts;
 exports.watch = watchAll;
+exports.build = series(clean, parallel(css,scripts));
 
-// gulp.task('watch', watchAll);
-
-// gulp.task('build', gulp.series(clean, parallel(styles,scripts)) );
 // gulp.task('dev', gulp.series('build', 'watch') );
 
 function defaultTask(cb) {
@@ -70,3 +74,9 @@ function defaultTask(cb) {
     // console.log('hello');
 }
 exports.default = watchAll;
+
+
+// gulp.task('watch', watchAll);
+// gulp.task('styles', css);
+// gulp.task('scripts', scripts);
+// gulp.task('build', gulp.series(clean, parallel(styles,scripts)) );
